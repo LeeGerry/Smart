@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <edu.auburn.smart.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:orientation="horizontal"
+        android:background="@mipmap/bottom_tab_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rbTab1"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="For you"/>
+        <RadioButton
+            android:id="@+id/rbTab2"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_news_selector"
+            android:text="Favorites"/>
+        <RadioButton
+            android:id="@+id/rbTab3"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_gov_selector"
+            android:text="Search"/>
+        <RadioButton
+            android:id="@+id/rbTab4"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_smart_selector"
+            android:text="Saved"/>
+        <RadioButton
+            android:id="@+id/rbTab5"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_setting_selector"
+            android:text="Setting"/>
+    </RadioGroup>
+</LinearLayout>

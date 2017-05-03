@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/llHead"
+        android:background="#fff"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/ivHead"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/head"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="25dp"
+            android:text="John Smith"
+            android:textStyle="bold"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height=".1dp" />
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Allow collecting log"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We can recommend your favorite articles by the log" />
+        </LinearLayout>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sw"
+            app:sb_effect_duration="300"
+            app:sb_checked_color="#e40000"
+            app:sb_uncheckcircle_color="#e40000"
+            app:sb_shadow_color="#e40000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+        </com.suke.widget.SwitchButton>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height=".1dp" />
+    <TextView
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:id="@+id/tvUpData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check for update"
+        android:background="@drawable/bg_textview_selector"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height=".1dp" />
+    <TextView
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_textview_selector"
+        android:text="Log out"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+</LinearLayout>
